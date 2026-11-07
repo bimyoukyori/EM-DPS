@@ -1,0 +1,11 @@
+{
+  "cases": [
+    14,
+    35,
+    49,
+    126
+  ],
+  "selection": "Cases14,49,126 already used in the original representative figure; case35 additionally illustrates a low-model-error result (lowest selected model RMSE among128). Qualitative selection is disclosed; population statistics retain all cases.",
+  "K": 4,
+  "ranking": "Minimum original evaluation waveform MSE per observation; truth is never used to choose a candidate."
+}

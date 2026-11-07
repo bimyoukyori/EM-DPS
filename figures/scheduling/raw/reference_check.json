@@ -1,0 +1,9 @@
+{
+  "case": 0,
+  "index": 5482,
+  "reference_mse": 0.0151473144069314,
+  "ablation_late_mse": 0.015147684141993523,
+  "abs_mse_difference": 3.6973506212234497e-07,
+  "max_field_difference": 0.0026988983154296875,
+  "note": "Direct regression against original sampler on case zero; algebraically equivalent Euler arithmetic can differ at float32 rounding level."
+}

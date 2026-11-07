@@ -1,0 +1,63 @@
+{
+  "cases": 32,
+  "case_selection": "First 32 held-out cases in existing fixed test order; set before running schedule outcomes.",
+  "K": 1,
+  "seed": 123,
+  "steps": 32,
+  "schedules": {
+    "Early": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "Uniform": [
+      0,
+      10,
+      20,
+      30
+    ],
+    "Late": [
+      16,
+      20,
+      24,
+      28
+    ]
+  },
+  "ordered_update_sizes": [
+    0.004472135988319589,
+    0.004472135988319589,
+    0.004472135988319589,
+    0.004472135988319589
+  ],
+  "dose_control": "The same four ordered update sizes, taken from the original late schedule, are used for every guided treatment. No schedule-specific tuning.",
+  "objective": {
+    "mse": 1.0,
+    "decorrelation": 0.05,
+    "tv": 5e-05
+  },
+  "normalized_step_clipping": 0.05,
+  "eps_bounds": [
+    1.0,
+    35.0
+  ],
+  "physical_budget_per_guided_case": {
+    "forward_backward": 4,
+    "evaluation_forward": 1
+  },
+  "rationale": "K=1 removes multi-candidate selection; equal calls and update sizes isolate placement along the denoising trajectory.",
+  "inference": "Observation conditioning, trained denoiser, local physical gradient, preprocessing and final evaluation unchanged.",
+  "sigma_const": 0.039093017578125,
+  "x_mean": 5.682396719716955,
+  "x_std": 1.475042083603111,
+  "timing": "Exclusive RTX 3090; CUDA-synchronized generation plus physical correction plus final evaluation; setup, warm-up and file I/O excluded.",
+  "source_sha256": {
+    "gprx.py": "402e4bf10ec35468779d627df84f7fe400fa74479369aba03b2d5f7bfdb77552",
+    "stage6c_dps_eps.py": "3b0962fd114b0ed5504833ef237dc2bfe0774b15a1a663e5c73a61a90d2c83f2",
+    "fwi_refine_eps.py": "229c34e629a2258ef2ff271d854c75d5254ec612c3ae1e05fd7ab85e64e5b4bb",
+    "runs/edm_pn_eps_condanchor_full_v1/cfg.yaml": "8b59e0677057e374ba7f86e6e5a0750fa9eec29dee3e11585017f6251daa7eb4"
+  },
+  "checkpoint_sha256": "45cb5b5282945306d53f9ab479bc8ba12aa52f54205c2866e1155c5bc43b23aa",
+  "torch_version": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 3090"
+}

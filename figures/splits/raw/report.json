@@ -1,0 +1,52 @@
+{
+  "valid_cases": 18000,
+  "seed": 42,
+  "sizes": {
+    "train": 14400,
+    "val": 1800,
+    "test": 1800
+  },
+  "main_cases": 128,
+  "repeated_cases": 64,
+  "duplicate_counts": {
+    "source_keys": {
+      "cross_split_groups": 0,
+      "cross_split_pairs": 0
+    },
+    "permittivity": {
+      "cross_split_groups": 0,
+      "cross_split_pairs": 0
+    },
+    "complete_pairs": {
+      "cross_split_groups": 0,
+      "cross_split_pairs": 0
+    }
+  },
+  "normalization": {
+    "model_mean": 5.682396719716955,
+    "model_std": 1.475042083603111,
+    "data_mean": 0.001967037191658037,
+    "data_std": 0.1820192077339373,
+    "source": "Training statistics stored in the original best checkpoint"
+  },
+  "model_grid": [
+    128,
+    384
+  ],
+  "data_grid": [
+    512,
+    384
+  ],
+  "metric": "For each validation/test sample: min over every training sample of sqrt(mean((standardized query - standardized reference)^2)). One scalar training std per space; no per-sample normalization beyond the original processed-B-scan operator.",
+  "nearest_search": "Exhaustive float32 full-grid matrix distances with TF32 disabled; the four closest candidates are refined by direct float64 squared differences.",
+  "duplicate_definition": "Cross-split comparisons on original stored arrays; complete pair is eps + sigma + raw bscan. Source key is (subset, source).",
+  "provenance": {
+    "h5_path": "/root/autodl-tmp/gprx_data/raw.h5",
+    "h5_bytes": 2478146804,
+    "checkpoint_sha256": "45cb5b5282945306d53f9ab479bc8ba12aa52f54205c2866e1155c5bc43b23aa",
+    "gprx_sha256": "402e4bf10ec35468779d627df84f7fe400fa74479369aba03b2d5f7bfdb77552",
+    "prep_sha256": "310755ac9fde8f329d045494f4820ad324ac63f96890b9b447cf25ae1ab66586"
+  },
+  "recomputation_note": "Original audit script/data were unavailable. This audit was recomputed with explicit full-grid metric definitions; its numeric curves are not asserted identical to the old PNG.",
+  "elapsed_seconds": 189.08412528038025
+}

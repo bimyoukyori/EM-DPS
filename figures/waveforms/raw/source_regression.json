@@ -1,0 +1,42 @@
+[
+  {
+    "case": 10,
+    "method": "No-DPS",
+    "abs_mse_difference": 0.0
+  },
+  {
+    "case": 10,
+    "method": "Early",
+    "abs_mse_difference": 0.0
+  },
+  {
+    "case": 10,
+    "method": "Uniform",
+    "abs_mse_difference": 0.0
+  },
+  {
+    "case": 10,
+    "method": "Late",
+    "abs_mse_difference": 0.0
+  },
+  {
+    "case": 24,
+    "method": "No-DPS",
+    "abs_mse_difference": 0.0
+  },
+  {
+    "case": 24,
+    "method": "Early",
+    "abs_mse_difference": 0.0
+  },
+  {
+    "case": 24,
+    "method": "Uniform",
+    "abs_mse_difference": 0.0
+  },
+  {
+    "case": 24,
+    "method": "Late",
+    "abs_mse_difference": 0.0
+  }
+]
