@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the EM-DPS manuscript when using this research code."
+title: "EM-DPS: Diffusion posterior sampling with electromagnetic sensitivity transfer for full-waveform inversion of ground-penetrating radar data"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Ding
+    given-names: Wenqiang
+  - family-names: Ma
+    given-names: Changying

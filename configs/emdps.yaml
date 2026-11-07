@@ -1,0 +1,122 @@
+seed: 123
+device: cuda
+run: runs/emdps
+data:
+  src: data/source_mat
+  h5: data/raw.h5
+  subsets:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  max_per_subset: 0
+  preview_n: 6
+  preview: runs/h5_preview.png
+  split_seed: 42
+  train_frac: 0.8
+  val_frac: 0.1
+  stats_max: 0
+  recompute_stats: true
+fdtd:
+  dx: 0.005
+  domain_x: 1.5
+  domain_z: 0.5
+  nx: 100
+  ny: 300
+  nz: 1
+  freq: 650000000.0
+  time_window: 2.0e-08
+  scan_start: 0.12
+  scan_end: 1.18
+  scan_step: 0.025
+  offset: 0.2
+  source_depth: 0.04
+  receiver_depth: 0.04
+  pml: 12
+  source:
+  - Hertzian
+  - z
+  source_amp:
+  - gaussian
+  - 1.0
+  - 650000000.0
+  receiver_component: 2
+  nrx: 1
+  nsrc: 1
+  mr: 1.0
+  air_cells: 20
+  air_eps: 1.0
+  air_sigma: 0.0
+prep:
+  remove_mean_trace: true
+  t0_align: false
+  t0_thr: 0.08
+  pre_t0: 10
+  crop_len: 512
+  mute_top: 70
+  norm_q: 99.0
+  clip: 1.0
+  dewow: true
+  dewow_win: 121
+  background: median
+  mute_taper: 30
+  polarity: 1.0
+model:
+  x_resolution:
+  - 128
+  - 384
+  y_resolution:
+  - 512
+  - 384
+  ch: 80
+  cond_ch: 64
+  emb_ch: 320
+  mult:
+  - 1
+  - 2
+  - 2
+  - 4
+  cond_blocks: 4
+  x_ch: 1
+noise:
+  sigma_data: 0.5
+  P_mean: 0.7
+  P_std: 1.2
+train:
+  epochs: 120
+  batch: 12
+  val_batch: 12
+  workers: 4
+  lr: 0.0001
+  eta_min: 1.0e-06
+  wd: 0.0001
+  amp: true
+  clip_grad: 1.0
+  max_val_batches: 40
+  use_amp: true
+  mixed_precision: true
+  grad_clip: 0.5
+  resume: false
+  batch_size: 24
+  work_dir: runs/edm_safe_v1
+  early_stop_patience: 25
+  early_stop_min_delta: 0.0001
+sample:
+  steps: 64
+  sigma_min: 0.002
+  sigma_max: 5.0
+  rho: 7.0
+  cases: 8
+  K: 4
+  guidance_scale: 1.0
+target_loss:
+  enabled: true
+  threshold_z: 2.0
+  roi_weight: 12.0
+cond_dropout: 0.0
+cond_anchor:
+  enabled: true
+  sigma: 5.0
+  weight: 1.0

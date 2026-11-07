@@ -1,0 +1,29 @@
+{
+  "cases": [
+    10,
+    24
+  ],
+  "selection": "Ascending No-DPS MSE ranks 16 and 24 of 32 (one-based); selected without looking at guided gains.",
+  "isolated_slots": [
+    0,
+    16,
+    28
+  ],
+  "isolated_update_size": 0.004472135988319589,
+  "seed": 123,
+  "counterfactual": "One correction at the selected step; all remaining steps unguided. Same baseline trajectory and initial noise.",
+  "spatial_comparison": "Previously saved four-correction schedule reconstructions, no reranking or retraining.",
+  "diagnostics_not_timing": "Additional forward solves are diagnostic measurements and excluded from the original budget/runtime comparison.",
+  "field_extent": {
+    "x_m": [
+      0.0,
+      1.5
+    ],
+    "depth_m": [
+      0.0,
+      0.5
+    ]
+  },
+  "input_metric_sha256": "45b08b55e658c4143089854de98b7dfe0cba07812bdd703e81e2b135fd662253",
+  "state_map_definition": "training standard deviation times (projected updated normalized state minus original state), after clipping and bounds."
+}

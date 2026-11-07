@@ -1,0 +1,2 @@
+N,mean_best_mse,mean_best_corr,mean_eps_std_mean,mean_std_candidate_mse,corr_eps_std_vs_best_mse,corr_eps_std_vs_best_corr,corr_mse_margin_vs_best_mse,bad_cases,bad_mean_eps_std,good_mean_eps_std,bad_mean_std_candidate_mse,good_mean_std_candidate_mse
+64,0.0073219742662331,0.8902629427611828,0.0586587909492664,0.0007183708874477,0.5179397052669085,-0.6288355594928181,0.5268671621085462,9,0.0688227150175306,0.0569956033744595,0.0014680080738756,0.000595702984214

@@ -1,0 +1,6 @@
+method,run_dir,N_cases,approx_total_seconds,approx_seconds_per_case,output_size_MB
+NoDPS_K4,runs/stage7b_k_ablation/nodps_k4_64cases,64,520.6930766105652,8.135829322040081,139.56103801727295
+DPS_K4_lr0p02,runs/stage7c_lr_ablation/dps_lr0p02_k4_64cases,64,2741.1023786067963,42.82972466573119,140.74843502044678
+DPS_K1_lr0p02,runs/stage7b_k_ablation/dps_k1_64cases,64,723.4037668704987,11.303183857351542,55.48146629333496
+DPS_K2_lr0p02,runs/stage7b_k_ablation/dps_k2_64cases,64,1398.124802350998,21.845700036734343,84.26938152313232
+DPS_K8_lr0p02,runs/stage7b_k_ablation/dps_k8_64cases,64,5356.600429534912,83.696881711483,180.83899688720703

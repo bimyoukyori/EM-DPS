@@ -1,0 +1,9 @@
+numpy
+scipy
+h5py
+PyYAML
+matplotlib
+pandas
+# Install a CUDA-enabled PyTorch build separately.
+torch
+PyMuPDF

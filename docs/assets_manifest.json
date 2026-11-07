@@ -1,0 +1,12 @@
+[
+  {
+    "path": "runs/emdps/ckpt/best.pt",
+    "size": 165984549,
+    "sha256": "45cb5b5282945306d53f9ab479bc8ba12aa52f54205c2866e1155c5bc43b23aa"
+  },
+  {
+    "path": "data/raw.h5",
+    "size": 2478146804,
+    "sha256": "57822774ebd84f40c943e80edadd67e02ec46ea4d3934f15498a52f506a5ac3b"
+  }
+]

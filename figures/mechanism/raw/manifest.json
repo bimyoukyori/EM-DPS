@@ -1,0 +1,14 @@
+{
+  "case010_isolated.npz": "8c624f751fc6da23e202b3de6bc69e9bd381d7aef7b7c7fa84392121758ec4e0",
+  "case010_spatial.npz": "6b5cddb3a32a7e371538520bd858f4759bbc1739e8559d14570a1b8e09d8539c",
+  "case010_spatial_metrics.json": "e9cf9e1f386436a1dd91f2c579c8e13aeab16d12028ac88c5dffa28501d60675",
+  "case024_isolated.npz": "6d6aecd377a9647c670abde8ff81765848909412744992cd8bce8ff843774a8b",
+  "case024_spatial.npz": "3d455c12f53c0c655bebab0feecef560379ebbca8f160d4dbe6526b0ef7eda9a",
+  "case024_spatial_metrics.json": "c7431f72a5f869d893ee06f8bd8a2e9f36cc31eb5e576d08d2cbd17382b277c1",
+  "diagnose.py": "06abcd6cdceead336337334aacce4c1d6d431f0dc6f26a81f66afb66390392a8",
+  "isolated_metrics.csv": "b87cc16bdefa5b1972193516c92812a5e9a01f54ce13f3cea7d60bddff8b2c9e",
+  "protocol.json": "4b5f464d96e6176065fe248caf48528c73df912661a7045f4ea225d8cd00bd89",
+  "save_state_updates.py": "57dbe375a3d19121a6a17870118464bd19c98254ab0a9863a2814afe6bb8b57d",
+  "source_regression.json": "6084e25d70676675941ee8ea47ccb0163bcc964cc95ddead53108b7eeda63ccd",
+  "state_response_metrics.csv": "aba4e031f4b1c653664ac01f7040eb1e643d9535c374396b2e5705092c5e8ee6"
+}
